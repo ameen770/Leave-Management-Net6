@@ -95,7 +95,7 @@ Instructions on how to use them in your own application are linked below.
 ## Contribute
 Want to contribute? Great!
 
-Follow me in githup [![Follow](https://github.com/ameen770/Leave-Management-Net6/)]
+Follow me in githup [[Ameen Hameed](https://github.com/ameen770/Leave-Management-Net6/)]
 
 ## License
 
