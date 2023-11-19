@@ -27,17 +27,16 @@ This project is an interactive leave application portal that includes Employee l
 -	Framework: Entity Framework, Bootstrap
 -	Code Editor: Visual Studio Code
 -	Support: .Net >= 6.0
-
- [public repository][dill]
+-	
 
 ## Installation
 
-    Clone, unzip, and open the solution file in vscode
+    Clone, unzip, and open the solution file in Visual Studio 2022
 
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-    Download and install VSCode
+    Download and install Visual Studio 2022
     AutoMapper >= v12.0.1
     AutoMapper.Dependency Injection >= v12.0.0
     Serilog.ASPNETCore >= v6.1.1
@@ -45,7 +44,7 @@ Install the dependencies and devDependencies and start the server.
     Serilog.Expression >= v3.4.1
 ```
 
-Running The application in vscode.
+Running The application in Visual Studio 2022.
 Start without debugging
        ![debug none](https://user-images.githubusercontent.com/99231323/218284706-dbe98b3f-5686-489b-874f-94d75dd03659.png)
 
@@ -96,9 +95,7 @@ Instructions on how to use them in your own application are linked below.
 ## Contribute
 Want to contribute? Great!
 
-Do a pull request. [![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://github.com/trevoirwilliams/LeaveManagementWeb.NET/pulls)
-
-Join our Discord Channel [![Discord code-with-trev](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/channels/964216683256496228/1006601536186617876)
+Follow me in githup [![Follow](https://github.com/ameen770/Leave-Management-Net6/)]
 
 ## License
 
