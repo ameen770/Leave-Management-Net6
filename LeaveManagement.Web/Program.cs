@@ -30,6 +30,7 @@ builder.Services.AddHttpContextAccessor();
 
 //builder.Services.AddTransient<IEmailSender>(s => new EmailSender("localhost", 25, "no-reply@leavemanagement.com"));
 builder.Services.AddTransient<IEmailSender>(s => new EmailSender("localhost", 25, "event.management.2023@hotmail.com"));
+// builder.Services.AddTransient<IEmailSender>(s => new EmailSender("smtp - mail.outlook.com", 587, "event.management.2023@hotmail.com"));
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
