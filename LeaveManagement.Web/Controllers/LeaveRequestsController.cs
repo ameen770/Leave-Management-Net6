@@ -93,6 +93,8 @@ namespace LeaveManagement.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(LeaveRequestCreateVM model)
         {
+            model.LeaveTypes = new SelectList(await leaveTypeRepository.GetAllAsync(), "Id", "Name", model.LeaveTypeId);
+
             try
             {
                 if (ModelState.IsValid)
@@ -109,8 +111,7 @@ namespace LeaveManagement.Web.Controllers
             {
                 ModelState.AddModelError(string.Empty, "An Error Has Occurred. Please Try Again Later");
             }
-
-            model.LeaveTypes = new SelectList(await leaveTypeRepository.GetAllAsync(), "Id", "Name", model.LeaveTypeId);
+            
             return View(model);
         }
     }

@@ -14,6 +14,7 @@
             <div class="form-group">
                 <label asp-for="LeaveTypeId" class="control-label"></label>
                 <select asp-for="LeaveTypeId" asp-items="Model?.LeaveTypes" class="form-select">
+                @*<select asp-for="LeaveTypeId" asp-items="Model?.LeaveTypes" class="form-select allocateBtn" data-id="@Model.LeaveTypeId">*@
                     <option>Select Leave Type</option>
                 </select>
                 <span asp-validation-for="LeaveTypeId" class="text-danger"></span>
@@ -47,6 +48,33 @@
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+
+@*<form id="allocationForm" asp-action="AllocateLeave">
+            <input type="hidden" id="leaveTypeIdAllocate" name="LeaveTypeId" />
+</form>
+
+@section Scripts{
+    <script>
+
+            $('.allocateBtn').click(function(e) {
+                swal({
+                    title: "Are you sure?",
+                    text: "Are you sure you want to allocation this leave?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true
+                }).then((confirm) => {
+                        if(confirm){
+                            var btn = $(this);
+                            var id = btn.data("id");
+                            $('#leaveTypeIdAllocate').val(id);
+                            $('#allocationForm').submit();
+                        }
+                    });
+            });
+        });
+    </script>
+        }*@
     </div>
 </div>
 

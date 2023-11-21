@@ -8,6 +8,7 @@ namespace LeaveManagement.Web.Services
         private string smtpServer;
         private int smtpPort;
         private string fromEmailAddress;
+        //private string fromEmailPassword;
 
         public EmailSender(string smtpServer, int smtpPort, string fromEmailAddress)
         {

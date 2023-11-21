@@ -102,11 +102,11 @@ namespace LeaveManagement.Application.Repositories
 
             await AddRangeAsync(allocations);
 
-            foreach (var employee in employeesWithNewAllocations)
+            /*foreach (var employee in employeesWithNewAllocations)
             {
                 await emailSender.SendEmailAsync(employee.Email, $"Leave Allocation Posted for {period}", $"Your {leaveType.Name} " +
                     $"has been posted for the period of {period}. You have been given {leaveType.DefaultDays}.");
-            }
+            }*/
         }
 
         public async Task<bool> UpdateEmployeeAllocation(LeaveAllocationEditVM model)
@@ -120,10 +120,10 @@ namespace LeaveManagement.Application.Repositories
             leaveAllocation.NumberOfDays = model.NumberOfDays;
             await UpdateAsync(leaveAllocation);
 
-            var user = await userManager.FindByIdAsync(leaveAllocation.EmployeeId);
+            /*var user = await userManager.FindByIdAsync(leaveAllocation.EmployeeId);
 
             await emailSender.SendEmailAsync(user.Email, $"Leave Allocation Updated for {leaveAllocation.Period}", 
-                "Please review your leave allocations.");
+                "Please review your leave allocations.");*/
 
             return true;
         }
