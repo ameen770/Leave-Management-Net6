@@ -33,6 +33,12 @@ namespace LeaveManagement.Web.Controllers
             return View(model);
         }
 
+        public async Task<ActionResult> PartialMyLeave()
+        {
+            var model = await leaveRequestRepository.GetMyLeaveDetails();
+            return PartialView(model);
+        }
+
         // GET: LeaveRequests/Details/5
         public async Task<IActionResult> Details(int? id)
         {
